@@ -17,15 +17,19 @@
         </head>
         <body>
             <header>
-                <nav>
-                    <h1>agoodshop</h1>
-                    <ul>
-                        <svg class="lnr lnr-list"><use xlink:href="#lnr-list"></use></svg>
-                        <li><a href="#">Tienda</a></li>
-                        <li><a href="#">Accesorios</a></li>
-                        <li><a href="#">Soporte</a></li>
-                        <li><a href="#">Contactar</a></li>
-                    </ul>
+                <nav class="menu ">
+                    <h1 class="menu__tittle">agoodshop</h1>
+                    <div class="menu__dropdown">
+                        <button class="menu__button">
+                            <svg class="lnr lnr-list menu__icon"><use xlink:href="#lnr-list"></use></svg>
+                        </button>
+                        <ul class="menu__content">                        
+                            <li class="menu__list"><a href="#">Tienda</a></li>
+                            <li class="menu__list"><a href="#">Accesorios</a></li>
+                            <li class="menu__list"><a href="#">Soporte</a></li>
+                            <li class="menu__list menu--rect"><a href="#">Contactar</a></li>
+                        </ul>
+                    </div>
                 </nav>
             </header>
 
