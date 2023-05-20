@@ -130,29 +130,32 @@
                     </div>
                 </section>
 
-                <aside>
-                    <h2>Participa en el sorteo de un iPhone 13</h2>
-                    <p>
-                        Este verano, ¿venimos cargados de premios! Así que antes de irte de vacaciones, ¿participa en nuestro sorteo! y podrás llevarte un regalo increíble 
-                        como un nuevo iPhone 13.
-                    </p>
-                    <p>Rellena este formulario para ser uno de los afortunados</p>
-                    <form action="#">
+                <aside class="aside">
+                    <div class="aside__principal">
+                        <h2 class="aside__tittle">Participa en el sorteo de un iPhone 13</h2>
+                        <p class="aside__description">
+                            Este verano, ¿venimos cargados de premios! Así que antes de irte de vacaciones, ¿participa en nuestro sorteo! y podrás llevarte un regalo increíble 
+                            como un nuevo iPhone 13.
+                        </p>
+                        <p class="aside__description">Rellena este formulario para ser uno de los afortunados</p>
+                    </div>
+                    <form action="#" class="aside__form">
                         <div>
-                            <label for="name">Nombre</label>
-                            <input type="text" id="name" name="name" placeholder="Ari Gold">
+                            <label class="form__label" for="name">Nombre</label>
+                            <input class="form__input" type="text" id="name" name="name" placeholder="Ari Gold" required>
                         </div>
                         <div>
-                            <label for="email">Email</label>
-                            <input type="text" id="email" name="email" placeholder="arigold@mga.com">
+                            <label class="form__label" for="email">Email</label>
+                            <input class="form__input" type="text" id="email" name="email" placeholder="arigold@mga.com" required 
+                            pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/">
                         </div>
-                        <button type="submit">Enviar</button>
+                        <button class="form__button" type="submit">Enviar</button>
                     </form>                    
                 </aside>
             </main>
 
-            <footer>
-                <p>© agoodshop</p>
+            <footer class="footer">
+                <p class="footer__description">© agoodshop</p>
             </footer>
         </body>
 </html>
