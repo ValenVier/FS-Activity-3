@@ -33,40 +33,46 @@
                 </nav>
             </header>
 
-            <main>
-                <section>
-                    <article>
-                        <!-- artículo principal -> imagen + bannerImg + oferta + título + párrafo + precio + botón + icónosDescripcion -->
-                        <figure>
-                            <img src="/images/iphone13.avif" alt="Imagen del nuevo iPhone 13">
-                        </figure>
-                        <p>128 <span>gb</span></p>
-                        <!-- text-transformation - uppercase -->l
-                        <p>Oferta</p>
-                        <h2>Compra un iPhone 13 Pro</h2>
-                        <p>
-                            iPhone 13: Tu nuevo superpoder. Nuestro sistema de cámara dual más avanzado. El que hace morder el polvo la competencia. Un subidón de autonomía que vaya si notarás.
-                            Ceramic Shield, más duro que cualquier vidrio de smartphone. 
-                        </p>
-                        <p>Pantalla Super Retina XDR de 6,1 pulgadas. Diseño robusto con bordes planos y resistente al agua.</p>
-                        <p>939,99€</p>
-                        <a>Comprar</a>
+            <main class="main">
+                <section class="main__principal">
+                    <article class="principal__article">
                         <div>
-                            <svg class="lnr lnr-store"><use xlink:href="#lnr-store"></use></svg>
-                            <span>Envío rápido, gratuito y sin contacto</span>
-                        </div>
-                        <div>
-                            <svg class="lnr lnr-redo"><use xlink:href="#lnr-redo"></use></svg>
-                            <p>Devoluciones fáciles y grauitas</p>
-                        </div>
-                        <div>
-                            <svg class="lnr lnr-diamond"><use xlink:href="#lnr-diamond"></use></svg>
-                            <p>Posibilidad de pago a plazos</p>
+                            <figure class="article__img">
+                                <img src="/images/iphone13.avif" alt="Imagen del nuevo iPhone 13">
+                            </figure>
+                            <p class="article__banner">128 <span class="banner__uppercase">gb</span></p>
                         </div>                        
+                        <div>
+                            <p class="article__state">Oferta</p>
+                            <h2 class="article__tittle">Compra un iPhone 13 Pro</h2>
+                            <p class="article__description">
+                                iPhone 13: Tu nuevo superpoder. Nuestro sistema de cámara dual más avanzado. El que hace morder el polvo la competencia. Un subidón de autonomía que vaya si notarás.
+                                Ceramic Shield, más duro que cualquier vidrio de smartphone. 
+                            </p>
+                            <p class="article__description">Pantalla Super Retina XDR de 6,1 pulgadas. Diseño robusto con bordes planos y resistente al agua.</p>
+                            <div class="article__div-price">
+                                <p class="article__price">939,99€</p>
+                                <a class="article__button">Comprar</a>
+                            </div>
+                            <div class="article--grid">
+                                <div class="article--grid">
+                                    <svg class="lnr lnr-store grid__icono"><use xlink:href="#lnr-store"></use></svg>
+                                    <p class="grid__description">Envío rápido, gratuito y sin contacto</p>
+                                </div>
+                                <div class="article--grid">
+                                    <svg class="lnr lnr-redo"><use xlink:href="#lnr-redo"></use></svg>
+                                    <p class="grid__description">Devoluciones fáciles y grauitas</p>
+                                </div>
+                                <div class="article--grid">
+                                    <svg class="lnr lnr-diamond"><use xlink:href="#lnr-diamond"></use></svg>
+                                    <p class="grid__description">Posibilidad de pago a plazos</p>
+                                </div>    
+                            </div>      
+                        </div>  
                     </article>
                 </section>
 
-                <section>
+                <section class="secondary">
                     <h2>Accesorios Recomendados</h2>
                     <article>
                         <header>
