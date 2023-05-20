@@ -5,10 +5,15 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     color: black;
+    font-size: 1em;
 }
 
 body{
     position: relative;
+}
+
+li{
+    list-style: none;
 }
 
 a {
@@ -18,4 +23,93 @@ a {
 button{
     background: none;
     border: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.lnr-list{
+    width: 32px;
+}
+.lnr-store{
+    width: 32px;
+}
+.lnr-redo{
+    width: 32px;
+}
+.lnr-diamond{
+    width: 32px;
+}
+
+/*BEM*/
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 1em 1em 1em;
+    height: 4em;
+    border-bottom: 1px solid black;
+}
+
+.menu__tittle{
+    font-size: 2em;
+}
+
+.menu__icon{
+    height: 2em;
+    margin-right: 60px;
+}
+
+
+
+
+
+@media screen and (max-width: 990px) {
+    .menu__dropdown {
+        display: inline-block;
+        position: relative;
+    }
+    .menu__content {
+        display: none;
+        position: absolute;
+        width: 100%;
+        overflow: auto;
+        box-shadow: 0px 10px 10px 0px rgba(0,0,0,0,6);
+    }
+    .menu__dropdown:hover .menu__content {
+        display: block;
+    }
+    .menu__content a {
+        display: block;
+        color: #000000;
+        background-color:antiquewhite;
+        padding: 5px;
+    }
+    .menu__content a:hover {
+        color: #FFFFFF;
+        background-color: #00A4BD;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    
+    .menu{
+        padding: 1em 8em 1em 8em;
+    }
+
+    .menu__button{
+        display: none;
+    }
+
+    .menu__dropdown{
+        display: flex;
+        align-items: center;
+    }
+
+    .menu__list{
+        display: inline-block;
+        padding: 0em 1em 0em 1em;
+    }
+
 }
