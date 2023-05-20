@@ -129,6 +129,10 @@ img{
     background-color: #0456ee;
 }
 
+.article__button:hover{
+    background-color: #002a79;
+}
+
 .article--grid{
     margin-top:  1rem;
     display: grid;
@@ -158,6 +162,10 @@ img{
     margin-bottom: 1rem;
 }
 
+.secondary__card:hover{
+    background-color: #00000017;
+}
+
 .card__tittle{
     font-size: 1.3rem;
     margin-top: 1rem;
@@ -183,6 +191,57 @@ img{
     margin-top: 1rem;
     font-size: 0.9rem;
 }
+
+.aside{
+    background-color: #cae1e4;
+    padding: 1rem;
+}
+
+.aside__tittle{
+    font-size: 2.5rem;
+}
+
+.aside__description{
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form__label{
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+.form__input{
+    margin-bottom: 1.3rem;
+    width: 100%;
+    height: 3rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.form__button{
+    background-color: #0456ee;
+    color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.form__button:hover{
+    background-color: #002a79;
+}
+
+.footer{
+    border-top: 1px solid black;
+    padding: 1.5rem;
+}
+
+.footer__description{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
 
 @media screen and (max-width: 919px) {
     .menu__dropdown {
@@ -228,13 +287,21 @@ img{
 
     .menu__list{
         display: inline-block;
-        padding: 0rem 1rem 0rem 1rem;
+        padding: 0rem 0.5rem 0rem 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .menu__list:hover{
+        background-color: rgba(100, 148, 237, 0.521);
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        color: white;
     }
 
     .menu--rect{
         border: 1px solid black;
         border-radius: 0.5rem;
-        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+        padding: 0.5rem;
     }
 
     .main{
@@ -265,5 +332,21 @@ img{
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto;
         gap: 1rem;
+    }
+
+    .aside{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 3rem;
+        padding: 3rem;
+    }
+
+    .aside__principal{
+        grid-column: 1 / 3;
+    }
+
+    .aside__form{
+        grid-column: 3;
     }
 }
