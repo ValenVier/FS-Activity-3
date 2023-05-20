@@ -69,7 +69,7 @@ img{
 }
 
 .main__principal{
-    margin-bottom: 1.2rem;
+    margin-bottom: 2rem;
 }
 
 .principal__article{
@@ -146,6 +146,44 @@ img{
     font-size: 0.8rem;
 }
 
+.secondary__tittle{
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.secondary__card{
+    border: 1px solid rgb(122, 116, 116);
+    border-radius: 0.5rem;
+    padding: 1rem 1rem 1rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.card__tittle{
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card__flag{
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+}
+
+.flag--red{
+    background-color: rgba(201, 0, 0, 0.808);
+    color: white;
+}
+
+.flag--blue{
+    background-color: blue;
+    color: white;
+}
+
+.card__description{
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
 @media screen and (max-width: 919px) {
     .menu__dropdown {
         display: inline-block;
@@ -220,5 +258,12 @@ img{
 
     .article__tittle{
         padding: 0rem 0rem 1rem 0rem;
+    }
+
+    .secondary__cards{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        gap: 1rem;
     }
 }
