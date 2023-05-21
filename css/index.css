@@ -45,8 +45,9 @@ img{
     height: 32px;
 }
 
-/*Brem*/
+/*BEM*/
 
+/* header */
 .menu{
     display: flex;
     justify-content: space-between;
@@ -63,6 +64,8 @@ img{
     height: 2rem;
     margin-right: 60px;
 }
+
+/* main // sección principal */
 
 .main{
     padding: 1rem 1rem 1rem 1rem; 
@@ -150,6 +153,8 @@ img{
     font-size: 0.8rem;
 }
 
+/* main // sección secundaria */
+
 .secondary__tittle{
     font-size: 2rem;
     padding-bottom: 1rem;
@@ -192,6 +197,8 @@ img{
     font-size: 0.9rem;
 }
 
+/* main // aside */
+
 .aside{
     background-color: #cae1e4;
     padding: 1rem;
@@ -231,6 +238,8 @@ img{
     background-color: #002a79;
 }
 
+/* footer */
+
 .footer{
     border-top: 1px solid black;
     padding: 1.5rem;
@@ -244,6 +253,7 @@ img{
 
 
 @media screen and (max-width: 919px) {
+    /* dispositivos pequeños */
     .menu__dropdown {
         display: inline-block;
         position: relative;
@@ -272,6 +282,7 @@ img{
 }
 
 @media (min-width: 919px) {
+    /* dispositivos grandes */
     .menu{
         padding: 1rem 8rem 1rem 8rem;
     }

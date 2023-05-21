@@ -8,8 +8,11 @@
             <meta name="author" content="ValenVier">
             <meta name="description" content="En esta página encontrarás los mejores productos a precios irresistibles">
             <title>agoodshop</title>
+            <!-- hoja de estilos -->
             <link rel="stylesheet" href="css/index.css">
+            <!-- favicon -->
             <link rel="icon" type="image/png" sizes="192x192"  href="/images/favicon.ico">
+            <!-- fuentes y estilos tipográficos -->
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,900;1,100;1,400;1,900&display=swap" rel="stylesheet">
@@ -17,7 +20,9 @@
         </head>
         <body>
             <header>
-                <nav class="menu ">
+                <!-- El header contendrá el nombre de la empresa y un menú que estará desplegado en dispositivos grandes
+                pero que en dispositivos pequeños se hará dropdown -->
+                <nav class="menu "> 
                     <h1 class="menu__tittle">agoodshop</h1>
                     <div class="menu__dropdown">
                         <button class="menu__button">
@@ -34,6 +39,8 @@
             </header>
 
             <main class="main">
+                <!-- main contendrá el artículo central, artículos relacionados (en una sección secundaria) y el aside 
+                que se situará abajo antes del footer del body -->
                 <section class="main__principal">
                     <article class="principal__article">
                         <div>
@@ -73,6 +80,7 @@
                 </section>
 
                 <section class="main__secondary">
+                    <!-- sección secundaria con artículos relacionados con el artículo principal -->
                     <h2 class="secondary__tittle">Accesorios Recomendados</h2>
                     <div class="secondary__cards">
                         <article class="secondary__card">
@@ -131,6 +139,8 @@
                 </section>
 
                 <aside class="aside">
+                    <!-- Aside: contiene información no relevante que puede o no tener relación con el propósito de la 
+                    página. En nuestro caso un sorteo -->
                     <div class="aside__principal">
                         <h2 class="aside__tittle">Participa en el sorteo de un iPhone 13</h2>
                         <p class="aside__description">
@@ -149,7 +159,7 @@
                             <input class="form__input" type="text" id="email" name="email" placeholder="arigold@mga.com" required 
                             pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/">
                         </div>
-                        <button class="form__button" type="submit">Enviar</button>
+                        <button class="form__button" type="submit" name="submitButton" formaction="">Enviar</button>
                     </form>                    
                 </aside>
             </main>
