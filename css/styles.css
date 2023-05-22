@@ -225,6 +225,11 @@ img{
     height: 3rem;
     border-radius: 0.5rem;
     padding: 1rem;
+    border-color: #8986865d;
+}
+
+.form__input::placeholder{
+    color: #5452528a;
 }
 
 .form__button{
